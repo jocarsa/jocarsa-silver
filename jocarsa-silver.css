@@ -23,17 +23,21 @@
 /* Style for the icons with relief effect */
 .jocarsa-silver-input-wrapper .jocarsa-silver-input-icon {
   position: absolute !important;
-  top: 40% !important;
-  left: 10px !important;
-  transform: translateY(-50%) !important;
-  font-size: 16px !important;
-  color: #888 !important;
-  background-color: #f0f0f0 !important; /* Light background for contrast */
-  border: 1px solid #ccc !important; /* Border for relief effect */
-  border-radius: 4px !important; /* Rounded corners */
-  padding: 4px !important; /* Padding around the icon */
-  pointer-events: none !important; /* Prevent interaction with the icon */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
+    top: 37% !important;
+    left: 0px !important;
+    transform: translateY(-50%) !important;
+    font-size: 16px !important;
+    color: #888 !important;
+    background-color: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px 0px 0px 4px !important;
+    padding: 4px !important;
+    pointer-events: none !important;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; */
+    height: 73%;
+    width: 31px;
+    text-align: center;
+    line-height: 26px;
 }
 
 /* Jocarsa-Silver Label Styles */

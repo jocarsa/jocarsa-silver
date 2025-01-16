@@ -8,12 +8,13 @@
 
 /* Style for the input fields */
 .jocarsa-silver-input-wrapper input {
-  width: 100% !important;
-  padding: 10px 10px 10px 40px !important; /* Adjust padding for icon space */
-  font-size: 16px !important;
-  border: 1px solid #ccc !important;
-  border-radius: 5px !important;
-  outline: none !important;
+  width: 100% !important; */
+    padding: 10px 10px 10px 50px !important;
+    font-size: 16px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    /* position: absolute;
 }
 
 .jocarsa-silver-input-wrapper input:focus {
@@ -23,7 +24,8 @@
 /* Style for the icons with relief effect */
 .jocarsa-silver-input-wrapper .jocarsa-silver-input-icon {
   position: absolute !important;
-    top: 37% !important;
+    position: absolute !important;
+    top: 20px !important;
     left: 0px !important;
     transform: translateY(-50%) !important;
     font-size: 16px !important;
@@ -35,9 +37,10 @@
     pointer-events: none !important;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; */
     height: 73%;
-    width: 31px;
+    width: 40px;
     text-align: center;
     line-height: 26px;
+    /* margin-top: -50%;;
 }
 
 /* Jocarsa-Silver Label Styles */

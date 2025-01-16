@@ -8,13 +8,14 @@
 
 /* Style for the input fields */
 .jocarsa-silver-input-wrapper input {
-  width: 100% !important; */
+  width: 100% !important; 
     padding: 10px 10px 10px 50px !important;
     font-size: 16px !important;
     border: 1px solid #ccc !important;
     border-radius: 5px !important;
     outline: none !important;
     /* position: absolute;*/
+        padding: 10px 10px 10px 50px !important;
 }
 
 .jocarsa-silver-input-wrapper input:focus {

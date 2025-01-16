@@ -1,0 +1,32 @@
+/* Jocarsa-Silver Namespace Styles */
+.jocarsa-silver-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Style for the input fields */
+.jocarsa-silver-input-wrapper input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Adjust padding for icon space */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.jocarsa-silver-input-wrapper input:focus {
+  border-color: #007BFF;
+}
+
+/* Style for the icons */
+.jocarsa-silver-input-wrapper .jocarsa-silver-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none; /* Prevent interaction with the icon */
+}

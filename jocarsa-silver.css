@@ -30,3 +30,12 @@
   color: #888 !important;
   pointer-events: none !important; /* Prevent interaction with the icon */
 }
+/* Jocarsa-Silver Label Styles */
+.jocarsa-silver-input-label {
+  display: block;
+  margin-bottom: 5px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #555 !important;
+}
+

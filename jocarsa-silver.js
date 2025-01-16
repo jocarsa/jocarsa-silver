@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
 	console.log("jocarsa | silver funcionando")
     const inputTypes = {
         text: "abc",
@@ -35,5 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     initializeInputIcons();
-});
+
 

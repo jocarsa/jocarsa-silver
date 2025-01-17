@@ -20,6 +20,7 @@ const inputTooltips = {
     tel: "Introduce un número de teléfono.",
     url: "Introduce una dirección URL.",
     date: "Introduce una fecha.",
+    search: "Introduce un término de búsqueda.",
 };
 
 // Function to initialize icons and tooltips

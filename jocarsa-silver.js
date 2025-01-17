@@ -9,6 +9,7 @@ const inputTypes = {
     tel: "📞",
     url: "🌐",
     date: "📅",
+    search: "🔎",
 };
 
 const inputTooltips = {

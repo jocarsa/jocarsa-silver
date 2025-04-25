@@ -1,32 +1,36 @@
-/* 1. Wrapper: relative container, adjusts to the input’s own size */
+/* 1. Wrapper: no fixed width, just position context */
 .jocarsa-silver-input-wrapper {
   position: relative;
-  display: inline-block; /* shrinks/grows with the input */
+  display: inline-block;    /* shrink-wrap to the input’s own size */
 }
 
-/* 2. Input: give left padding for the icon; let its own CSS control height/width */
+/* 2. Input: no width forcing, just give enough left padding for the icon */
 .jocarsa-silver-input-wrapper input {
-  padding-left: 2.5em;   /* space for a ~1em icon + padding */
-  width: 100%;           /* remove if you want auto-sizing */
+  padding-left: 2.5em;      /* adjust if needed to clear the icon */
   box-sizing: border-box;
 }
 
-/* 3. Icon: absolutely centered vertically, fixed distance from the left edge */
+/* 3. Focus state stays the same */
+.jocarsa-silver-input-wrapper input:focus {
+  border-color: #007BFF;
+}
+
+/* 4. Icon: 60% of the input’s height, perfectly circular */
 .jocarsa-silver-input-icon {
   position: absolute;
-  left: 0.75em;           /* adjust horizontal gap */
+  left: 0.75em;             /* gap from the left edge */
   top: 50%;
   transform: translateY(-50%);
+  height: 60%;              /* 60% of wrapper (i.e. input) height */
+  aspect-ratio: 1 / 1;      /* make width == height */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* size & appearance */
-  width: 1.5em;
-  height: 1.5em;
+  /* visual styling */
   font-size: 1em;
   color: #888;
-  background: #f0f0f0;
+  background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 50%;
   pointer-events: none;

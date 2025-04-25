@@ -3,7 +3,6 @@
 .jocarsa-silver-input-group {
   display: inline-flex;
   align-items: stretch;
-  width: 100%;              /* remove if you want auto-sizing */
   font-size: 0;             /* collapse whitespace */
 }
 
@@ -14,12 +13,13 @@
   justify-content: center;
   padding: 0 0.75em;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-right: none;
   border-radius: 0.25rem 0 0 0.25rem;
   font-size: 1rem;          /* restore font */
   color: #888;
   pointer-events: none;
+  height:79%;
 }
 
 /* 3. The input itself */

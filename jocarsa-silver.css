@@ -1,38 +1,41 @@
-/* 1. Wrapper: no fixed width, just position context */
-.jocarsa-silver-input-wrapper {
-  position: relative;
-  display: inline-block;    /* shrink-wrap to the input’s own size */
+/* ───────────────────────────────────────────────────────────────────────── */
+/* 1. Input-group wrapper */
+.jocarsa-silver-input-group {
+  display: inline-flex;
+  align-items: stretch;
+  width: 100%;              /* remove if you want auto-sizing */
+  font-size: 0;             /* collapse whitespace */
 }
 
-/* 2. Input: no width forcing, just give enough left padding for the icon */
-.jocarsa-silver-input-wrapper input {
-  padding-left: 2.5em;      /* adjust if needed to clear the icon */
-  box-sizing: border-box;
-}
-
-/* 3. Focus state stays the same */
-.jocarsa-silver-input-wrapper input:focus {
-  border-color: #007BFF;
-}
-
-/* 4. Icon: 60% of the input’s height, perfectly circular */
-.jocarsa-silver-input-icon {
-  position: absolute;
-  left: 0.75em;             /* gap from the left edge */
-  top: 50%;
-  transform: translateY(-50%);
-  height: 60%;              /* 60% of wrapper (i.e. input) height */
-  aspect-ratio: 1 / 1;      /* make width == height */
+/* 2. Prepend “extension label” with icon */
+.jocarsa-silver-input-group-prepend {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* visual styling */
-  font-size: 1em;
-  color: #888;
+  padding: 0 0.75em;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  border-radius: 50%;
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  font-size: 1rem;          /* restore font */
+  color: #888;
   pointer-events: none;
+}
+
+/* 3. The input itself */
+.jocarsa-silver-input-group input {
+  flex: 1 1 auto;
+  padding: 0.5em 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* 4. Focus state: unify borders */
+.jocarsa-silver-input-group input:focus,
+.jocarsa-silver-input-group-prepend {
+  border-color: #007BFF;
 }
 
